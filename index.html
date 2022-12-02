@@ -144,20 +144,21 @@
                 <br>
             </p>
     
-            <div class="poster" id="siamcse21">
-            | <a href="javascript:toggleblock('siamcse21_abs')">abstract</a> |
+            <div class="poster" id="controllable">
+            | <a href="javascript:toggleblock('controllable_abs')">abstract</a> |
             <a href="https://drive.google.com/file/d/1XZfx187wEOQI5lvzev-sYabdoE2HR2u5/view">poster</a> |
     
             <p align="justify">
-                <i id='siamcse21_abs'>
-                  Spectral indices are combinations of the pixel values from two or more spectral bands in a multispectral image.
-                  Spectral indices are used to highlight pixels showing the relative abundance or lack of a land-cover type of interest in an image.
-                  This study aims to build a feature space with some spectral indices and see if those indices are useful and efficient for the classification of satellite images.
-                  The training data is extracted from the NAIP program with six classes (building, barren land, trees, grassland, road, and water).
-                  Each image has four spectral bands (RED, GREEN, BLUE, and NIR). After some comparison and analysis, the spectral indices used are Modified Soil-adjusted Vegetation Index (MSAVI), Atmospherically Resistant Vegetation Index (ARVI), Normalized Difference Water Index (NDWI), Difference Spectral Building Index (DSBI), and Road Extraction Index (REI).
-                  With these spectral indices and the distribution of the four spectral bands (here, we use mean and standard deviation to represent each distribution), an 18-dimensional feature space is formed.
-                  The dimensionality of the feature space is then reduced to improve the classification accuracy using the Unsupervised Feature Selection with Ordinal Locality (UFSOL).
-                  The spectral indices have performed a good job as features and has attained 92.58% of accuracy.
+                <i id='controllable_abs'>
+                  An outfit visualization method generates an image of a person wearing real garments from images of those garments.
+                  Current methods can produce images that look realistic and preserve garment identity, captured in details such as collar, cuffs, texture, hem, and sleeve length.
+                  However, no current method can both control how the garment is worn -- including tuck or untuck, opened or closed, high or low on the waist, etc.. -- and generate realistic images that accurately preserve the properties of the original garment.
+                  We describe an outfit visualization method that controls drape while preserving garment identity.
+                  Our system allows instance independent editing of garment drape, which means a user can construct an edit (e.g. tucking a shirt in a specific way) that can be applied to all shirts in a garment collection.
+                  Garment detail is preserved by relying on a warping procedure to place the garment on the body and a generator then supplies fine shading detail.
+                  To achieve instance independent control, we use control points with garment category-level semantics to guide the warp.
+                  The method produces state-of-the-art quality images, while allowing creative ways to style garments, including allowing tops to be tucked or untucked; jackets to be worn open or closed; skirts to be worn higher or lower on the waist; and so on. The method allows interactive control to correct errors in individual renderings too.
+                  Because the edits are instance independent, they can be applied to large pools of garments automatically and can be conditioned on garment metadata (e.g. all cropped jackets are worn closed or all bomber jackets are worn closed).
                 </i>
             </p>
             </div>
@@ -283,6 +284,10 @@
 
 <script xml:space="preserve" language="JavaScript">
 hideallbibs();
+</script>
+  
+<script xml:space="preserve" language="JavaScript">
+hideblock('controllable_abs');
 </script>
 
 <script xml:space="preserve" language="JavaScript">
