@@ -123,7 +123,7 @@
     
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-  <tr><td><sectionheading>&nbsp;&nbsp;Preprints</sectionheading></td></tr>
+  <tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr>
 </table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
@@ -137,7 +137,7 @@
         <td width="67%" valign="top">
             <p>
                 <a href="#" id="controllable"></a>
-                <heading>Wearing the Same Outfit in Different Ways - A Controllable Virtual Try-on Method</heading></a>
+                <heading>Controlling Virtual Try-on Pipeline Through Rendering Policies</heading></a>
                 <br>
                 Kedan Li, Jeffrey Zhang, <u><b>Shao-Yu Chang</b></u>, David Forsyth
                 <br>
@@ -149,15 +149,16 @@
     
             <p align="justify">
                 <i id='controllable_abs'>
-                  An outfit visualization method generates an image of a person wearing real garments from images of those garments.
-                  Current methods can produce images that look realistic and preserve garment identity, captured in details such as collar, cuffs, texture, hem, and sleeve length.
-                  However, no current method can both control how the garment is worn -- including tuck or untuck, opened or closed, high or low on the waist, etc.. -- and generate realistic images that accurately preserve the properties of the original garment.
-                  We describe an outfit visualization method that controls drape while preserving garment identity.
-                  Our system allows instance independent editing of garment drape, which means a user can construct an edit (e.g. tucking a shirt in a specific way) that can be applied to all shirts in a garment collection.
-                  Garment detail is preserved by relying on a warping procedure to place the garment on the body and a generator then supplies fine shading detail.
-                  To achieve instance independent control, we use control points with garment category-level semantics to guide the warp.
-                  The method produces state-of-the-art quality images, while allowing creative ways to style garments, including allowing tops to be tucked or untucked; jackets to be worn open or closed; skirts to be worn higher or lower on the waist; and so on. The method allows interactive control to correct errors in individual renderings too.
-                  Because the edits are instance independent, they can be applied to large pools of garments automatically and can be conditioned on garment metadata (e.g. all cropped jackets are worn closed or all bomber jackets are worn closed).
+                  This paper shows how to impose rendering policies on a virtual try-on (VTON) pipeline. Our rendering policies are lightweight procedural descriptions of how the pipeline should render outfits or render particular types of garments.
+                  Our policies are procedural expressions describing offsets to the control points for each set of garment types.
+                  The policies are easily authored and are generalizable to any outfit composed of garments of similar types.
+                  We describe a VTON pipeline that accepts our policies to modify garment drapes and produce high-quality try-on images with garment attributes preserved.
+                  <br>
+                  Layered outfits are a particular challenge to VTON systems because learning to coordinate warps between multiple garments so that nothing sticks out is difficult.
+                  Our rendering policies offer a lightweight and effective procedure to achieve this coordination, while also allowing precise manipulation of drape.
+                  Drape describes the way in which a garment is worn (for example, a shirt could be tucked or untucked).
+                  <br>
+                  Quantitative and qualitative evaluations demonstrate that our method allows effective manipulation of drape and produces significant measurable improvements in rendering quality for complicated layering interactions.
                 </i>
             </p>
             </div>
