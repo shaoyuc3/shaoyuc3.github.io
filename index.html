@@ -125,6 +125,46 @@
         </th>
     </tr>
 </table>
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr><td><sectionheading>&nbsp;&nbsp;Preprints</sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+    <tr>
+        <td width="33%" valign="top" align="center">
+            <img src="images/initialization.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        </td>
+
+        <td width="67%" valign="top">
+            <p>
+                <a href="#" id="DiffusionAtlas"></a>
+                <heading>DiffusionAtlas: High-fidelity Consistent Diffusion Video Editing</heading></a>
+                <br>
+                <u><b>Shao-Yu Chang</b></u>, Hwann-Tzong Chen, Tyng-Luh Liu
+                <br>
+                <br>
+            </p>
+    
+            <div class="poster" id="DiffusionAtlas">
+            | <a href="javascript:toggleblock('DiffusionAtlas_abs')">abstract</a> |
+            <a href="https://diffusionatlas.github.io/">webpage</a> |
+    
+            <p align="justify">
+                <i id='DiffusionAtlas_abs'>
+                  We present a diffusion-based video editing framework, namely DiffusionAtlas, which can achieve both frame consistency and high fidelity in editing video object appearance.
+                  Despite the success in image editing, diffusion models still encounter significant hindrances when it comes to video editing due to the challenge of maintaining spatiotemporal consistency in the object's appearance across frames.
+                  On the other hand, atlas-based techniques allow propagating edits on the layered representations consistently back to frames.
+                  However, they often struggle to create editing effects that adhere correctly to the user-provided textual or visual conditions due to the limitation of editing the texture atlas on a fixed UV mapping field.
+                  Our method leverages a visual-textual diffusion model to edit objects directly on the diffusion atlases, ensuring coherent object identity across frames.
+                  We design a loss term with atlas-based constraints and build a pretrained text-driven diffusion model as pixel-wise guidance for refining shape distortions and correcting texture deviations.
+                  Qualitative and quantitative experiments show that our method outperforms state-of-the-art methods in achieving consistent high-fidelity video-object editing.
+                </i>
+            </p>
+            </div>
+        </td>
+    </tr>
     
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
