@@ -157,6 +157,37 @@
 
     <tr>
         <td width="33%" valign="top" align="center">
+            <img src="images/au.png" alt="sym" width="300" height="180" style="border-radius:15px">
+        </td>
+
+        <td width="67%" valign="top">
+            <p>
+                <a href="#" id="AU"></a>
+                <heading>Talking Head Generation via AU-Guided Landmark Prediction</heading></a>
+                <br> 
+                <u><b>Shao-Yu Chang</b></u>, Jingyi Xu, Hieu Le, Dimitris Samaras
+                <br>
+                ArXiv
+                <br>
+            </p>
+    
+            <div class="poster" id="AU">
+            | <a href="javascript:toggleblock('AU_abs')">abstract</a> | <a href="https://arxiv.org/abs/2403.13951">arXiv</a> |
+    
+            <p align="justify">
+                <i id='AU_abs'>
+                  We propose a two-stage framework for audio-driven talking head generation with fine-grained expression control via facial Action Units (AUs).
+                  Unlike prior methods relying on emotion labels or implicit AU conditioning, our model explicitly maps AUs to 2Dfacial landmarks, enabling physically grounded, per-frame expression control.
+                  In the f irst stage, a variational motion generator predicts temporally coherent landmark sequences from audio and AU intensities.
+                  In the second stage, a diffusion-based synthesizer generates realistic, lip-synced videos conditioned on these landmarks and a reference image.
+                  This separation of motion and appearance improves expression accuracy, temporal stability, and visual realism. Experiments on the MEAD dataset show that our method outperforms state-of-the-art baselines across multiple metrics, demonstrating the effectiveness of explicit AU-to-landmark modeling for expressive talking head generation.
+                </i>
+            </p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td width="33%" valign="top" align="center">
             <img src="images/acdg-vton4.png" alt="sym" width="300" height="180" style="border-radius:15px">
         </td>
 
@@ -445,6 +476,10 @@ hideblock('DiffusionAtlas_abs');
 
 <script xml:space="preserve" language="JavaScript">
 hideblock('ACDG-VTON_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+hideblock('AU_abs');
 </script>
 
 <script xml:space="preserve" language="JavaScript">
